@@ -257,29 +257,15 @@ h2 {
 
 .developer-card {
     position: relative;
-
+    z-index: 1;
     width: 310px;
-
     justify-self: center;
-
     padding: 30px;
-
     border: 1px solid rgba(255,255,255,0.12);
-
     border-radius: 20px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #181b28,
-            #0b0c12
-        );
-
+    background: linear-gradient(145deg, #181b28, #0b0c12);
     text-align: center;
-
-    box-shadow:
-        0 30px 80px rgba(0,0,0,0.5);
-
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
     animation: float 5s ease-in-out infinite;
 }
 
@@ -341,6 +327,9 @@ h2 {
     overflow: hidden;
     margin: 0 auto 20px;
     border: 3px solid #22b8c7;
+    position: relative;
+    z-index: 10;
+    background: #10121b;
 }
 
 .profile-image {
@@ -349,6 +338,10 @@ h2 {
     object-fit: cover;
     object-position: center;
     display: block;
+    position: relative;
+    z-index: 11;
+    opacity: 1;
+    visibility: visible;
 }
 /* ================= ABOUT ================= */
 
